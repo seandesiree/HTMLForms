@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enhancing the Web Form</title>
+  </head>
+  <body>
+    <h2>Selection Experience</h2>
+    <form>
+      <label for="programming-language">Favorite Programming Language:</label>
+      <select id="programming-language" name="programming-language" required>
+        <option value="">Please select</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="csharp">C#</option>
+        <option value="ruby">Ruby</option>
+      </select>
+
+      <fieldset>
+        <legend>Level of Expertise:</legend>
+        <label for="beginner">
+          <input type="radio" id="beginner" name="expertise" value="beginner" required>
+          Beginner
+        </label>
+        <label for="intermediate">
+          <input type="radio" id="intermediate" name="expertise" value="intermediate" required>
+          Intermediate
+        </label>
+        <label for="advanced">
+          <input type="radio" id="advanced" name="expertise" value="advanced" required>
+          Advanced
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Development Platforms:</legend>
+        <label for="web">
+          <input type="checkbox" id="web" name="platform" value="web">
+          Web
+        </label>
+        <label for="mobile">
+          <input type="checkbox" id="mobile" name="platform" value="mobile">
+          Mobile
+        </label>
+        <label for="desktop">
+          <input type="checkbox" id="desktop" name="platform" value="desktop">
+          Desktop
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Improving Accessibility</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="99" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
